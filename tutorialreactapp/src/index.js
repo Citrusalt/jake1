@@ -35,7 +35,14 @@ function BookList() {
 }
 
 const Book = (props) => {
+  // **Props destructuring method alternative**
+  // const {img, title, author} = props;
   return (
+    // <article className="book">
+    //   <img src={img} alt="" />
+    //   <h1>{title}</h1>
+    //   <h4>{author.toUpperCase()}</h4>
+    // </article>
     <article className="book">
       <img src={props.img} alt="" />
       <h1>{props.title}</h1>
